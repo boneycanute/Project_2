@@ -36,8 +36,9 @@ function execute()
     console.log(x);
     var y = parseInt(document.getElementById("hop").value);
     console.log(y);
-    changeDirection(x)
-    jumpForward(y)
+    changeDirection(x);
+    jumpForward(y);
+    console.log("X:"+queen.posX+" Y:"+queen.posY );
 document.getElementById("demo").innerHTML = "Position :"+queen.whereabouts+" X:"+queen.posX+" Y:"+queen.posY +" Direction:"+queen.direction;
 }
 
@@ -91,7 +92,7 @@ function jumpForward(steps)
             queen.posX=queen.posX+steps;
             break;
         case "W":
-            queen.posX=queen.posX+steps;
+            queen.posX=queen.posX-steps;
             break;
         case "NE":
             queen.posY=queen.posY-steps;
