@@ -55,7 +55,7 @@ function moveForward()
             queen.posX=queen.posX+1;
             break;
         case "W":
-            queen.posX=queen.posX+1;
+            queen.posX=queen.posX-1;
             break;
         case "NE":
             queen.posY=queen.posY-1;
